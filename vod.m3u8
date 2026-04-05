@@ -1,91 +1,439 @@
-#EXTM3U
-#EXTINF:-1,多瑙影院
-https://www.duonaovod.com/
-#EXTINF:-1,片库
-https://www.pdy8.com/
-#EXTINF:-1,素白白
-https://www.subaibai.com/
-#EXTINF:-1,CCTV节目
-https://tv.cctv.com/
-#EXTINF:-1,低端影视
-http://www.sddsn.com/
-#EXTINF:-1,电影天堂
-https://www.dydytt.net/
-#EXTINF:-1,真不卡
-https://www.zhenbuka3.com/
-#EXTINF:-1,影视工场
-https://www.ysgc.tv/
-#EXTINF:-1,百思派
-https://www.bestpipe.cn/
-#EXTINF:-1,freeok影视
-https://www.freeok.la/
-#EXTINF:-1,1个G影视
-https://ygg01.com/
-#EXTINF:-1,搜片网
-https://soupian.one/
-#EXTINF:-1,kimivod电视
-https://kimivod.com/
-#EXTINF:-1,厂长影视
-https://www.czzy.site/
-#EXTINF:-1,金牌影院
-https://fjvtw.com/
-#EXTINF:-1,流光影院
-https://www.gyf.lol/
-#EXTINF:-1,耐看点播
-https://nkvlog.com/
-#EXTINF:-1,爱看影视
-https://www.akysw.com/
-#EXTINF:-1,剧圈圈
-https://www.jqqzx.me/
-#EXTINF:-1,最热影视
-https://khi.cc/
-#EXTINF:-1,修罗影视
-https://v.xlys.ltd.ua/
-#EXTINF:-1,4K影视
-https://www.4kvm.tv/
-#EXTINF:-1,freeHD
-https://www.freehd1.vip/
-#EXTINF:-1,瓜子影视
-https://www.guaziys.com/
-#EXTINF:-1,飞飞影视
-https://www.ffys.top/
-#EXTINF:-1,饭团影视
-https://www.fantuanys.vip/
-#EXTINF:-1,剧爷爷
-https://www.juyeye.cc/
-#EXTINF:-1,iQIYIs影院
-https://iqiyis.com/
-#EXTINF:-1,麦田影视
-https://mtyy1.com/
-#EXTINF:-1,555看电影
-https://www.c7v0wub2.com/
-#EXTINF:-1,电影先生
-https://www.wentuokeji.com/
-#EXTINF:-1,奈飞工厂
-https://www.netflixgc.com/
-#EXTINF:-1,HDmoli
-https://www.hdmoli.pro/
-#EXTINF:-1,t天堂
-http://www.bttt11.com/
-#EXTINF:-1,片库网
-https://www.gzyrdnt.com/
-#EXTINF:-1,不太灵
-http://www.butailing.com/
-#EXTINF:-1,茶杯狐
-https://www.pantextile.com/
-#EXTINF:-1,在线之家
-https://www.zxzj.fun/
-#EXTINF:-1,NCAT影视
-https://www.ncat21.com/
-#EXTINF:-1,kkys影视
-https://www.kkys1.com/
-#EXTINF:-1,hhk影视
-https://www.hhkan1.com/
-#EXTINF:-1,TVB云播
-http://www.tvyun07.com/
-#EXTINF:-1,统一影视
-https://www.ty1010.com/
-#EXTINF:-1,AUETE影视
-https://auete.cc/
-#EXTINF:-1,呼啸影视
-https://huxiao.xyz/
+{
+  "sites": [
+    {
+      "key": "duonao",
+      "name": "多瑙影院",
+      "type": 0,
+      "api": "https://www.duonaovod.com/api.php",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "pianku",
+      "name": "片库",
+      "type": 0,
+      "api": "https://www.pdy8.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "subaibai",
+      "name": "素白白",
+      "type": 0,
+      "api": "https://www.subaibai.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "cctv",
+      "name": "CCTV节目",
+      "type": 0,
+      "api": "https://tv.cctv.com/api/live",
+      "searchable": 0,
+      "filterable": 0,
+      "timeout": 15000
+    },
+    {
+      "key": "duanduan",
+      "name": "低端影视",
+      "type": 0,
+      "api": "http://www.sddsn.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "dytian",
+      "name": "电影天堂",
+      "type": 0,
+      "api": "https://www.dydytt.net/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "zhenbuka",
+      "name": "真不卡",
+      "type": 0,
+      "api": "https://www.zhenbuka3.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "ysgc",
+      "name": "影视工场",
+      "type": 0,
+      "api": "https://www.ysgc.tv/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "bestpipe",
+      "name": "百思派",
+      "type": 0,
+      "api": "https://www.bestpipe.cn/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "freeok",
+      "name": "freeok影视",
+      "type": 0,
+      "api": "https://www.freeok.la/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "ygg",
+      "name": "1个G影视",
+      "type": 0,
+      "api": "https://ygg01.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "soupian",
+      "name": "搜片网",
+      "type": 0,
+      "api": "https://soupian.one/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "kimivod",
+      "name": "kimivod电视",
+      "type": 0,
+      "api": "https://kimivod.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "changzhang",
+      "name": "厂长影视",
+      "type": 0,
+      "api": "https://www.czzy.site/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "jinpai",
+      "name": "金牌影院",
+      "type": 0,
+      "api": "https://fjvtw.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "liuguang",
+      "name": "流光影院",
+      "type": 0,
+      "api": "https://www.gyf.lol/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "naikan",
+      "name": "耐看点播",
+      "type": 0,
+      "api": "https://nkvlog.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "aikan",
+      "name": "爱看影视",
+      "type": 0,
+      "api": "https://www.akysw.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "juquanquan",
+      "name": "剧圈圈",
+      "type": 0,
+      "api": "https://www.jqqzx.me/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "zuire",
+      "name": "最热影视",
+      "type": 0,
+      "api": "https://khi.cc/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "xiuluo",
+      "name": "修罗影视",
+      "type": 0,
+      "api": "https://v.xlys.ltd.ua/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "4kvm",
+      "name": "4K影视",
+      "type": 0,
+      "api": "https://www.4kvm.tv/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "freehd",
+      "name": "freeHD",
+      "type": 0,
+      "api": "https://www.freehd1.vip/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "guazi",
+      "name": "瓜子影视",
+      "type": 0,
+      "api": "https://www.guaziys.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "feifei",
+      "name": "飞飞影视",
+      "type": 0,
+      "api": "https://www.ffys.top/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "fantuan",
+      "name": "饭团影视",
+      "type": 0,
+      "api": "https://www.fantuanys.vip/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "juyeye",
+      "name": "剧爷爷",
+      "type": 0,
+      "api": "https://www.juyeye.cc/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "iqiyis",
+      "name": "iQIYIs影院",
+      "type": 0,
+      "api": "https://iqiyis.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "maitian",
+      "name": "麦田影视",
+      "type": 0,
+      "api": "https://mtyy1.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "555kan",
+      "name": "555看电影",
+      "type": 0,
+      "api": "https://www.c7v0wub2.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "dianyingxiansheng",
+      "name": "电影先生",
+      "type": 0,
+      "api": "https://www.wentuokeji.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "naifeigongchang",
+      "name": "奈飞工厂",
+      "type": 0,
+      "api": "https://www.netflixgc.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "hdmoli",
+      "name": "HDmoli",
+      "type": 0,
+      "api": "https://www.hdmoli.pro/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "tiantang",
+      "name": "t天堂",
+      "type": 0,
+      "api": "http://www.bttt11.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "piankuwang",
+      "name": "片库网",
+      "type": 0,
+      "api": "https://www.gzyrdnt.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "butailing",
+      "name": "不太灵",
+      "type": 0,
+      "api": "http://www.butailing.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "chabeihu",
+      "name": "茶杯狐",
+      "type": 0,
+      "api": "https://www.pantextile.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "zaixianzhijia",
+      "name": "在线之家",
+      "type": 0,
+      "api": "https://www.zxzj.fun/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "ncat",
+      "name": "NCAT影视",
+      "type": 0,
+      "api": "https://www.ncat21.com/api/v1",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "kkys",
+      "name": "kkys影视",
+      "type": 0,
+      "api": "https://www.kkys1.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "hhkan",
+      "name": "hhk影视",
+      "type": 0,
+      "api": "https://www.hhkan1.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "tvb",
+      "name": "TVB云播",
+      "type": 0,
+      "api": "http://www.tvyun07.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "tongyi",
+      "name": "统一影视",
+      "type": 0,
+      "api": "https://www.ty1010.com/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "auete",
+      "name": "AUETE影视",
+      "type": 0,
+      "api": "https://auete.cc/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "huxiao",
+      "name": "呼啸影视",
+      "type": 0,
+      "api": "https://huxiao.xyz/api",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    }
+  ],
+  "lives": [
+    {
+      "key": "cctv_live",
+      "name": "央视直播",
+      "type": 0,
+      "api": "https://live.fanmingming.com/tv/m3u8/IPTV.m3u8",
+      "searchable": 0,
+      "filterable": 0
+    },
+    {
+      "key": "weishi_live",
+      "name": "卫视直播",
+      "type": 0,
+      "api": "https://live.fanmingming.com/tv/m3u8/weishi.m3u8",
+      "searchable": 0,
+      "filterable": 0
+    },
+    {
+      "key": "4k_live",
+      "name": "4K超清直播",
+      "type": 0,
+      "api": "https://live.fanmingming.com/tv/m3u8/4K.m3u8",
+      "searchable": 0,
+      "filterable": 0
+    }
+  ],
+  "wallpaper": "https://picsum.photos/1920/1080?random=1",
+  "logo": "https://picsum.photos/200/200?random=2",
+  "search": true,
+  "filter": true
+}
