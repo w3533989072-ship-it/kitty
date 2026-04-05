@@ -1,20 +1,28 @@
 {
   "sites": [
     {
-      "key": "csp_zy",
-      "name": "影视合集",
-      "type": 3,
-      "api": "csp_YingHua",
+      "key": "freeok",
+      "name": "FreeOK影视",
+      "type": 1,
+      "api": "https://www.freeok.la/api.php/provide/vod/at/json/",
       "searchable": 1,
       "filterable": 1,
-      "timeout": 15000,
-      "ext": "https://ghp.ci/https://raw.githubusercontent.com/xyhelper/xyhelper.github.io/main/yinghua.json"
+      "timeout": 15000
     },
     {
-      "key": "csp_fmm",
-      "name": "影迷影视",
-      "type": 3,
-      "api": "csp_FanMingMing",
+      "key": "ysgc",
+      "name": "影视工场",
+      "type": 1,
+      "api": "https://www.ysgc.tv/api.php/provide/vod/at/json/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "subaibai",
+      "name": "素白白",
+      "type": 1,
+      "api": "https://www.subaibai.com/api.php/provide/vod/at/json/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
