@@ -12,16 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Bun (Latest)
+      - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
 
-      - name: Install dependencies
-        run: bun install
-
-      - name: Build configuration
-        run: bun run build
+      - name: Build 小猫源订阅文件
+        run: bun run vod.ts
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
