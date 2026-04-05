@@ -5,7 +5,6 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-# 必须加的权限配置，否则 Pages 无法部署
 permissions:
   contents: read
   pages: write
@@ -33,21 +32,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # 核心：执行脚本，生成 vod.m3u8 到根目录
       - name: Build 小猫源订阅文件
         run: npx tsx vod.ts
 
-      # 验证文件是否生成，排查空文件
-      - name: Verify vod.m3u8
-        run: |
-          ls -la ./vod.m3u8
-          cat ./vod.m3u8
-
-      # 只部署根目录的 vod.m3u8，避免上传源码
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./vod.m3u8
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
