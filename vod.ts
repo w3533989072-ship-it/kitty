@@ -53,10 +53,11 @@ const nsfwVods: Iconfig[] = [
 
 // from args context
 const args = process.argv.slice(2)
-const vodFile = args[0]
-const nsfwodFile = args[1]
+// 给默认值兜底，就算不传参数也不会报错
+const vodFile = args[0] ?? "./vod.json"
+const nsfwodFile = args[1] ?? "./xvod.json"
 const file1 = join(process.cwd(), vodFile)
-const file2 = join(process.cwd(), nsfwVodFile);
+const file2 = join(process.cwd(), nsfwodFile);
 
 (async () => {
   writeFileSync(file1, JSON.stringify(vods, null, 2))
