@@ -1,10 +1,28 @@
 {
   "sites": [
     {
-      "key": "cbang",
-      "name": "厂长资源",
-      "type": 0,
-      "api": "https://cj.czzy.site/api.php/provide/vod/?ac=list&t=1",
+      "key": "duonao",
+      "name": "多瑙影院",
+      "type": 1,
+      "api": "https://www.duonaovod.com/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "pianku",
+      "name": "片库",
+      "type": 1,
+      "api": "https://www.pdy8.com/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "subaibai",
+      "name": "素白白",
+      "type": 1,
+      "api": "https://www.subaibai.com/api.php/provide/vod/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
@@ -12,8 +30,8 @@
     {
       "key": "freeok",
       "name": "FreeOK影视",
-      "type": 0,
-      "api": "https://www.freeok.la/api.php/provide/vod/?ac=list&t=1",
+      "type": 1,
+      "api": "https://www.freeok.la/api.php/provide/vod/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
@@ -21,26 +39,53 @@
     {
       "key": "ysgc",
       "name": "影视工场",
-      "type": 0,
-      "api": "https://www.ysgc.tv/api.php/provide/vod/?ac=list&t=1",
+      "type": 1,
+      "api": "https://www.ysgc.tv/api.php/provide/vod/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
     },
     {
-      "key": "subaibai",
-      "name": "素白白影视",
-      "type": 0,
-      "api": "https://www.subaibai.com/api.php/provide/vod/?ac=list&t=1",
+      "key": "czzy",
+      "name": "厂长影视",
+      "type": 1,
+      "api": "https://www.czzy.site/api.php/provide/vod/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
     },
     {
-      "key": "duonao",
-      "name": "多瑙影院",
-      "type": 0,
-      "api": "https://www.duonaovod.com/api.php/provide/vod/?ac=list&t=1",
+      "key": "zhenbuka",
+      "name": "真不卡",
+      "type": 1,
+      "api": "https://www.zhenbuka3.com/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "fantuan",
+      "name": "饭团影视",
+      "type": 1,
+      "api": "https://www.fantuanys.vip/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "ncat",
+      "name": "NCAT影视",
+      "type": 1,
+      "api": "https://www.ncat21.com/api.php/provide/vod/",
+      "searchable": 1,
+      "filterable": 1,
+      "timeout": 15000
+    },
+    {
+      "key": "kkys",
+      "name": "kkys影视",
+      "type": 1,
+      "api": "https://www.kkys1.com/api.php/provide/vod/",
       "searchable": 1,
       "filterable": 1,
       "timeout": 15000
@@ -48,10 +93,18 @@
   ],
   "lives": [
     {
-      "key": "live",
-      "name": "高清直播",
+      "key": "cctv_live",
+      "name": "央视卫视直播",
       "type": 0,
       "api": "https://live.fanmingming.com/tv/m3u8/IPTV.m3u8",
+      "searchable": 0,
+      "filterable": 0
+    },
+    {
+      "key": "4k_live",
+      "name": "4K超清直播",
+      "type": 0,
+      "api": "https://live.fanmingming.com/tv/m3u8/4K.m3u8",
       "searchable": 0,
       "filterable": 0
     }
