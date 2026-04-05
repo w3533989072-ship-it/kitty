@@ -1,0 +1,14 @@
+{
+  "name": "kitty",
+  "version": "1.0.0",
+  "description": "仅用于展示小猫源编写，方便参考",
+  "main": "index.js",
+  "scripts": {
+    "build": "bun run vod.ts"
+  },
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
