@@ -20,9 +20,9 @@
   "homepage": "https://github.com/d1y/kitty#readme",
   "dependencies": {
     "@types/bun": "^1.3.1",
-    "@types/kitty": "https://github.com/waifu-project/movie/tarball/HEAD#subpath=JS/types",
+    "@types/kitty": "github:waifu-project/movie/JS/types#HEAD",
     "cheerio": "^1.1.2",
-    "kitty": "https://github.com/waifu-project/movie/tarball/HEAD#subpath=JS/cli",
+    "kitty": "github:waifu-project/movie/JS/cli#HEAD",
     "semver": "^7.7.3",
     "typescript": "^5.9.2",
     "@types/semver": "^7.7.1"
