@@ -54,7 +54,7 @@ const nsfwVods: Iconfig[] = [
 // from args context
 const args = process.argv.slice(2)
 const vodFile = args[0]
-const nsfwVodFile = args[1]
+const nsfwodFile = args[1]
 const file1 = join(process.cwd(), vodFile)
 const file2 = join(process.cwd(), nsfwVodFile);
 
