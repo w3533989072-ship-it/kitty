@@ -2,32 +2,28 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # 改成你自己的主分支，比如master
+    branches: [ main ]  # 改为你的主分支，如master
   workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. 保留Checkout，删除错误的bun-version参数
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. 新增：Setup Node.js（代替Bun，兼容性拉满）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20  # 已删除 cache: 'npm'，避免锁文件错误
 
-      # 3. 新增：npm安装依赖（解决原来的ENOENT错误）
       - name: Install dependencies
         run: npm install
 
-      # 4. 修改构建命令：用npx ts-node跑ts文件（代替bun run）
+      # 核心修改：用 tsx 代替 ts-node，彻底解决 .ts 后缀错误
       - name: Build 小猫源订阅文件
-        run: npx ts-node vod.ts
+        run: npx tsx vod.ts
 
-      # 5. 部署步骤完全不用改，原样保留！
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
