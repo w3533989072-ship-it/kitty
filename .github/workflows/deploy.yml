@@ -35,10 +35,11 @@ jobs:
       - name: Build 小猫源订阅文件
         run: npx tsx vod.ts
 
+      # 只部署根目录的 vod.m3u8，彻底解决空文件/源码问题
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./vod.m3u8
 
       - name: Deploy to GitHub Pages
         id: deployment
