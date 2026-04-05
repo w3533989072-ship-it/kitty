@@ -1,30 +1,14 @@
 {
   "name": "kitty",
   "version": "1.0.0",
-  "description": "",
+  "description": "仅用于展示小猫源编写，方便参考",
   "main": "index.js",
   "scripts": {
-    "build": "kitty-parse -o result.json"
+    "build": "bun run vod.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/d1y/kitty.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/d1y/kitty/issues"
-  },
-  "homepage": "https://github.com/d1y/kitty#readme",
-  "dependencies": {
-    "@types/bun": "^1.3.1",
-    "@types/kitty": "github:waifu-project/movie/JS/types#HEAD",
-    "cheerio": "^1.1.2",
-    "kitty": "github:waifu-project/movie/JS/cli#HEAD",
-    "semver": "^7.7.3",
-    "typescript": "^5.9.2",
-    "@types/semver": "^7.7.1"
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest"
   }
 }
