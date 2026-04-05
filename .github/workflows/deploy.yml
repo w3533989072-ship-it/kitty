@@ -1,54 +1,31 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
-
-permissions: write-all
-
-env:
-  VOD_CATES: "0"
+  push:
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    
-    - name: Setup Bun
-      uses: oven-sh/setup-bun@v1
-      with:
-        bun-version: latest
-    
-    - name: Install dependencies
-      run: bun install
-    
-    - name: Generate configuration file
-      run: |
-        bunx kitty-parse -o x.json
-        bun run vod.ts vod.json xvod.json
-        bun run t4.ts t4.json
-        bun run lives.ts lives.json
-        bun run pages.ts index.html
-    
-    - name: Prepare deployment directory
-      run: |
-        mkdir -p deploy
-        cp x.json vod.json xvod.json t4.json lives.json index.html deploy/
-    
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: deploy
-        publish_branch: gh-pages
-        force_orphan: true
-        keep_files: false
-        commit_message: 'Deploy: Update configuration file'
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun (Latest)
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build configuration
+        run: bun run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+          branch: gh-pages
+          clean: true
